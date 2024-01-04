@@ -11,7 +11,7 @@ using TruckManagement.Data;
 namespace TruckManagement.Migrations
 {
     [DbContext(typeof(TruckManagementDbContext))]
-    [Migration("20240104182945_InitialCreate")]
+    [Migration("20240104192618_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
