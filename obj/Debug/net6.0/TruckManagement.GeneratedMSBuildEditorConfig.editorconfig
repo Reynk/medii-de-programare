@@ -9,37 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TruckManagement
 build_property.RootNamespace = TruckManagement
-build_property.ProjectDir = C:\Users\Robi\Documents\GitHub\medii-de-programare\TruckManagement\
+build_property.ProjectDir = C:\Users\ionut\Documents\GitHub\medii-de-programare\TruckManagement\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Robi\Documents\GitHub\medii-de-programare\TruckManagement
+build_property.MSBuildProjectDirectory = C:\Users\ionut\Documents\GitHub\medii-de-programare\TruckManagement
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Robi/Documents/GitHub/medii-de-programare/TruckManagement/Pages/Error.cshtml]
+[C:/Users/ionut/Documents/GitHub/medii-de-programare/TruckManagement/Pages/Deliveries/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsaXZlcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ionut/Documents/GitHub/medii-de-programare/TruckManagement/Pages/Deliveries/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsaXZlcmllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ionut/Documents/GitHub/medii-de-programare/TruckManagement/Pages/Deliveries/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsaXZlcmllc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ionut/Documents/GitHub/medii-de-programare/TruckManagement/Pages/Deliveries/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsaXZlcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ionut/Documents/GitHub/medii-de-programare/TruckManagement/Pages/Deliveries/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsaXZlcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ionut/Documents/GitHub/medii-de-programare/TruckManagement/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Robi/Documents/GitHub/medii-de-programare/TruckManagement/Pages/Index.cshtml]
+[C:/Users/ionut/Documents/GitHub/medii-de-programare/TruckManagement/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Robi/Documents/GitHub/medii-de-programare/TruckManagement/Pages/Privacy.cshtml]
+[C:/Users/ionut/Documents/GitHub/medii-de-programare/TruckManagement/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Robi/Documents/GitHub/medii-de-programare/TruckManagement/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/ionut/Documents/GitHub/medii-de-programare/TruckManagement/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Robi/Documents/GitHub/medii-de-programare/TruckManagement/Pages/_ViewImports.cshtml]
+[C:/Users/ionut/Documents/GitHub/medii-de-programare/TruckManagement/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Robi/Documents/GitHub/medii-de-programare/TruckManagement/Pages/_ViewStart.cshtml]
+[C:/Users/ionut/Documents/GitHub/medii-de-programare/TruckManagement/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Robi/Documents/GitHub/medii-de-programare/TruckManagement/Pages/Shared/_Layout.cshtml]
+[C:/Users/ionut/Documents/GitHub/medii-de-programare/TruckManagement/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-k3l1z5xav3
