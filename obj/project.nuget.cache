@@ -2,7 +2,7 @@
   "version": 2,
   "dgSpecHash": "hwFw+DvdRxx3JS3eHwXHC8jEJCvJfBkAU06eeW3UKL3wW+LdN1kJMnr7zOvib0rJbYgz+a3kj0BqLv3uBYs4CQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Robi\\Documents\\GitHub\\medii-de-programare\\TruckManagement.csproj",
+  "projectFilePath": "C:\\Users\\ionut\\Documents\\GitHub\\medii-de-programare\\TruckManagement\\TruckManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ionut\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\ionut\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
