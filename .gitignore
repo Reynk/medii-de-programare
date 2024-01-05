@@ -508,3 +508,6 @@ obj/project.nuget.cache
 .vs/TruckManagement/DesignTimeBuild/.dtbcache.v2
 .vs/TruckManagement/DesignTimeBuild/.dtbcache.v2
 .vs/TruckManagement/FileContentIndex/0d6777cc-7c06-42ea-9381-f999c7dff813.vsidx
+obj/Debug/net6.0/TruckManagement.GeneratedMSBuildEditorConfig.editorconfig
+obj/Debug/net6.0/TruckManagement.csproj.AssemblyReference.cache
+obj/Debug/net6.0/TruckManagement.assets.cache
