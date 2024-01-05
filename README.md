@@ -1,1 +1,0 @@
-# medii-de-programare
