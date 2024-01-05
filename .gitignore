@@ -475,3 +475,33 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.editorconfig
+obj/Debug/net6.0/TruckManagement.dll
+.vs/TruckManagement/DesignTimeBuild/.dtbcache.v2
+.vs/TruckManagement/FileContentIndex/0d6777cc-7c06-42ea-9381-f999c7dff813.vsidx
+.vs/TruckManagement/FileContentIndex/1184b642-675f-451e-8d2a-0f75caf06ffb.vsidx
+.vs/TruckManagement/FileContentIndex/333263ea-3a69-4ae2-9830-44424143eedb.vsidx
+.vs/TruckManagement/FileContentIndex/5336a89b-fe36-4d02-9699-12c32751c024.vsidx
+.vs/TruckManagement/FileContentIndex/6ea0cfad-1e89-49ea-a3f8-0fb1b70ab3e4.vsidx
+.vs/TruckManagement/DesignTimeBuild/.dtbcache.v2
+.vs/TruckManagement/FileContentIndex/0d6777cc-7c06-42ea-9381-f999c7dff813.vsidx
+.vs/TruckManagement/FileContentIndex/1184b642-675f-451e-8d2a-0f75caf06ffb.vsidx
+.vs/TruckManagement/FileContentIndex/333263ea-3a69-4ae2-9830-44424143eedb.vsidx
+.vs/TruckManagement/FileContentIndex/5336a89b-fe36-4d02-9699-12c32751c024.vsidx
+.vs/TruckManagement/FileContentIndex/6ea0cfad-1e89-49ea-a3f8-0fb1b70ab3e4.vsidx
+.vs/TruckManagement/FileContentIndex/ad029a5c-0e77-40b0-876a-0cf387c3f75e.vsidx
+.vs/TruckManagement/FileContentIndex/c84aa827-e8f6-4c1b-859d-4673a59d5ce6.vsidx
+.vs/TruckManagement/FileContentIndex/d8559092-5005-4ca1-a7b0-614fd540561e.vsidx
+.vs/TruckManagement/FileContentIndex/e3afc4ce-83b9-482a-9890-da36db9ac550.vsidx
+.vs/TruckManagement/FileContentIndex/ed7ca184-e67c-44b5-bbc4-dd85f5b52e86.vsidx
+.vs/TruckManagement/v17/.suo
+bin/Debug/net6.0/TruckManagement.dll
+bin/Debug/net6.0/TruckManagement.pdb
+obj/Debug/net6.0/ref/TruckManagement.dll
+obj/Debug/net6.0/refint/TruckManagement.dll
+obj/Debug/net6.0/TruckManagement.csproj.CoreCompileInputs.cache
+obj/Debug/net6.0/TruckManagement.csproj.FileListAbsolute.txt
+obj/Debug/net6.0/TruckManagement.dll
+obj/Debug/net6.0/TruckManagement.GeneratedMSBuildEditorConfig.editorconfig
+obj/Debug/net6.0/TruckManagement.pdb
+obj/project.nuget.cache
