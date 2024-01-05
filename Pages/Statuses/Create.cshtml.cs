@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Policy;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -9,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using TruckManagement.Data;
 using TruckManagement.Models;
 
-namespace TruckManagement.Pages.Deliveries
+namespace TruckManagement.Pages.Statuses
 {
     public class CreateModel : PageModel
     {
@@ -22,25 +21,22 @@ namespace TruckManagement.Pages.Deliveries
 
         public IActionResult OnGet()
         {
-            ViewData["StatusID"] = new SelectList(_context.Set<Status>(), "ID",
-            "StatusName");
-
             return Page();
         }
 
         [BindProperty]
-        public Delivery Delivery { get; set; } = default!;
+        public Status Status { get; set; } = default!;
         
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-          if (!ModelState.IsValid || _context.Delivery == null || Delivery == null)
+          if (!ModelState.IsValid || _context.Status == null || Status == null)
             {
                 return Page();
             }
 
-            _context.Delivery.Add(Delivery);
+            _context.Status.Add(Status);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

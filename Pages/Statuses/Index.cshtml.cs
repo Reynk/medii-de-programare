@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using TruckManagement.Data;
 using TruckManagement.Models;
 
-namespace TruckManagement.Pages.Deliveries
+namespace TruckManagement.Pages.Statuses
 {
     public class IndexModel : PageModel
     {
@@ -19,13 +19,14 @@ namespace TruckManagement.Pages.Deliveries
             _context = context;
         }
 
-        public IList<Delivery> Delivery { get;set; } = default!;
+        public IList<Status> Status { get;set; } = default!;
 
         public async Task OnGetAsync()
         {
-            Delivery = await _context.Delivery
-                        .Include(b => b.Status)
-                    .ToListAsync();
+            if (_context.Status != null)
+            {
+                Status = await _context.Status.ToListAsync();
+            }
         }
     }
 }

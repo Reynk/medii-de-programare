@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using TruckManagement.Data;
 using TruckManagement.Models;
 
-namespace TruckManagement.Pages.Deliveries
+namespace TruckManagement.Pages.Statuses
 {
     public class EditModel : PageModel
     {
@@ -21,23 +21,21 @@ namespace TruckManagement.Pages.Deliveries
         }
 
         [BindProperty]
-        public Delivery Delivery { get; set; } = default!;
+        public Status Status { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Delivery == null)
+            if (id == null || _context.Status == null)
             {
                 return NotFound();
             }
 
-            var delivery =  await _context.Delivery.FirstOrDefaultAsync(m => m.ID == id);
-            if (delivery == null)
+            var status =  await _context.Status.FirstOrDefaultAsync(m => m.ID == id);
+            if (status == null)
             {
                 return NotFound();
             }
-            Delivery = delivery;
-            ViewData["StatusID"] = new SelectList(_context.Set<Status>(), "ID",
-            "StatusName");
+            Status = status;
             return Page();
         }
 
@@ -50,7 +48,7 @@ namespace TruckManagement.Pages.Deliveries
                 return Page();
             }
 
-            _context.Attach(Delivery).State = EntityState.Modified;
+            _context.Attach(Status).State = EntityState.Modified;
 
             try
             {
@@ -58,7 +56,7 @@ namespace TruckManagement.Pages.Deliveries
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!DeliveryExists(Delivery.ID))
+                if (!StatusExists(Status.ID))
                 {
                     return NotFound();
                 }
@@ -71,9 +69,9 @@ namespace TruckManagement.Pages.Deliveries
             return RedirectToPage("./Index");
         }
 
-        private bool DeliveryExists(int id)
+        private bool StatusExists(int id)
         {
-          return (_context.Delivery?.Any(e => e.ID == id)).GetValueOrDefault();
+          return (_context.Status?.Any(e => e.ID == id)).GetValueOrDefault();
         }
     }
 }

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TruckManagement.Data;
 
@@ -11,9 +12,10 @@ using TruckManagement.Data;
 namespace TruckManagement.Migrations
 {
     [DbContext(typeof(TruckManagementDBContext))]
-    partial class TruckManagementDBContextModelSnapshot : ModelSnapshot
+    [Migration("20240105143817_Status")]
+    partial class Status
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -49,7 +51,6 @@ namespace TruckManagement.Migrations
                     b.ToTable("Delivery");
                 });
 
-            modelBuilder.Entity("TruckManagement.Models.User", b =>
             modelBuilder.Entity("TruckManagement.Models.Status", b =>
                 {
                     b.Property<int>("ID")
@@ -58,21 +59,12 @@ namespace TruckManagement.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
 
-                    b.Property<bool>("IsAdmin")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserName")
                     b.Property<string>("StatusName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
 
-                    b.ToTable("User");
                     b.ToTable("Status");
                 });
 
