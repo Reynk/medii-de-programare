@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Security.Policy;
 
 namespace TruckManagement.Models
 {
@@ -16,5 +17,10 @@ namespace TruckManagement.Models
 
         [Display(Name = "Reference Phone Number")]
         public int PhoneNumber { get; set; }
+
+        public int? StatusID { get; set; }
+
+        [Display(Name = "Current Status")]
+        public Status? Status { get; set; }
     }
 }

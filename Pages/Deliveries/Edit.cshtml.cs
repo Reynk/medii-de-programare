@@ -36,6 +36,8 @@ namespace TruckManagement.Pages.Deliveries
                 return NotFound();
             }
             Delivery = delivery;
+            ViewData["StatusID"] = new SelectList(_context.Set<Status>(), "ID",
+            "StatusName");
             return Page();
         }
 

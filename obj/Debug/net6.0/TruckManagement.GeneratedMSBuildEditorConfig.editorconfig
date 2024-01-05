@@ -52,6 +52,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ionut/Documents/GitHub/medii-de-programare/TruckManagement/Pages/Statuses/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdHVzZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ionut/Documents/GitHub/medii-de-programare/TruckManagement/Pages/Statuses/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdHVzZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ionut/Documents/GitHub/medii-de-programare/TruckManagement/Pages/Statuses/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdHVzZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ionut/Documents/GitHub/medii-de-programare/TruckManagement/Pages/Statuses/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdHVzZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ionut/Documents/GitHub/medii-de-programare/TruckManagement/Pages/Statuses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdHVzZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ionut/Documents/GitHub/medii-de-programare/TruckManagement/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

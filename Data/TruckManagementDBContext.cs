@@ -15,5 +15,7 @@ namespace TruckManagement.Data
         }
 
         public DbSet<TruckManagement.Models.Delivery> Delivery { get; set; } = default!;
+
+        public DbSet<TruckManagement.Models.Status>? Status { get; set; }
     }
 }

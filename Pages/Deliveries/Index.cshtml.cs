@@ -23,10 +23,9 @@ namespace TruckManagement.Pages.Deliveries
 
         public async Task OnGetAsync()
         {
-            if (_context.Delivery != null)
-            {
-                Delivery = await _context.Delivery.ToListAsync();
-            }
+            Delivery = await _context.Delivery
+                        .Include(b => b.Status)
+                    .ToListAsync();
         }
     }
 }
