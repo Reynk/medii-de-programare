@@ -1,12 +1,22 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using System.Configuration;
 using TruckManagement.Data;
+using TruckManagement.Models;
+using Microsoft.AspNetCore.Identity;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<TruckManagementDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("TruckManagementDBContext") ?? throw new InvalidOperationException("Connection string 'TruckManagementDBContext' not found.")));
+
+builder.Services.AddDbContext<TruckManagementIdentityContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("TruckManagementIdentityContext") ?? throw new InvalidOperationException("Connection string 'TruckManagementIdentityContext' not found.")));
+
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<TruckManagementIdentityContext>();
 
 var app = builder.Build();
 
@@ -22,6 +32,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseAuthentication();
 
 app.UseAuthorization();
 
