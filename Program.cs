@@ -4,12 +4,27 @@ using TruckManagement.Data;
 using Microsoft.AspNetCore.Identity;
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("AdminPolicy", policy =>
+   policy.RequireRole("Admin"));
+});
+
+
 // Add services to the container.
-builder.Services.AddRazorPages();
+builder.Services.AddRazorPages((options =>
+{
+    options.Conventions.AuthorizeFolder("/Deliveries");
+    options.Conventions.AuthorizeFolder("/Users", "AdminPolicy");
+    options.Conventions.AuthorizeFolder("/Statuses", "AdminPolicy");
+    options.Conventions.AllowAnonymousToPage("/Deliveries/Index");
+    options.Conventions.AllowAnonymousToPage("/Deliveries/Details");
+}));
 builder.Services.AddDbContext<TruckManagementDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("TruckManagementDBContext") ?? throw new InvalidOperationException("Connection string 'TruckManagementDBContext' not found.")));
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<LibraryIdentityContext>();
 
 builder.Services.AddDbContext<LibraryIdentityContext>(options =>
