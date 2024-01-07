@@ -5,9 +5,8 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Add Members to the platform</h1>
+<h1>User Manager</h1>
 </br>
-<h3>An user that is not an admin, is considered a driver.</h3>
 <table class="table">
     <thead>
         <tr>
@@ -16,12 +15,6 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.User[0].Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.User[0].Password)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.User[0].IsAdmin)
             </th>
             <th></th>
         </tr>
@@ -35,12 +28,6 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Email)
                 </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IsAdmin)
-            </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
