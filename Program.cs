@@ -9,6 +9,11 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("AdminPolicy", policy =>
    policy.RequireRole("Admin"));
 });
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("DriverPolicy", policy =>
+   policy.RequireRole("User"));
+});
 
 
 // Add services to the container.
@@ -19,6 +24,7 @@ builder.Services.AddRazorPages((options =>
     options.Conventions.AuthorizeFolder("/Statuses", "AdminPolicy");
     options.Conventions.AllowAnonymousToPage("/Deliveries/Index");
     options.Conventions.AllowAnonymousToPage("/Deliveries/Details");
+    options.Conventions.AllowAnonymousToPage("/Deliveries/EditStatus");
 }));
 builder.Services.AddDbContext<TruckManagementDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("TruckManagementDBContext") ?? throw new InvalidOperationException("Connection string 'TruckManagementDBContext' not found.")));

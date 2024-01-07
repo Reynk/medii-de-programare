@@ -28,5 +28,6 @@ namespace TruckManagement.Pages.Deliveries
                         .Include(c => c.User)
                     .ToListAsync();
         }
+   
     }
 }
