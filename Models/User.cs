@@ -6,8 +6,9 @@ namespace TruckManagement.Models
     {
         public int ID { get; set; }
 
-        [Display(Name = "Name")]
+        [Display(Name = "Full Name")]
         public string UserName { get; set; }
+        public string Email { get; set; }
 
         [Display(Name = "Password")]
         public string Password { get; set; }
