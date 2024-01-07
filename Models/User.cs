@@ -7,13 +7,13 @@ namespace TruckManagement.Models
         public int ID { get; set; }
 
         [Display(Name = "Full Name")]
-        public string UserName { get; set; }
+        public string? UserName { get; set; }
         public string Email { get; set; }
 
         [Display(Name = "Password")]
-        public string Password { get; set; }
+        public string? Password { get; set; }
 
         [Display(Name = "Admin")]
-        public bool IsAdmin { get; set; }
+        public bool? IsAdmin { get; set; }
     }
 }
