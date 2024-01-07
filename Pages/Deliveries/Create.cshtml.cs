@@ -24,7 +24,8 @@ namespace TruckManagement.Pages.Deliveries
         {
             ViewData["StatusID"] = new SelectList(_context.Set<Status>(), "ID",
             "StatusName");
-
+            ViewData["UserID"] = new SelectList(_context.Set<User>(), "ID",
+            "UserName");
             return Page();
         }
 

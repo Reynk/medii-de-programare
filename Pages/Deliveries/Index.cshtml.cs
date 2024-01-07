@@ -25,6 +25,7 @@ namespace TruckManagement.Pages.Deliveries
         {
             Delivery = await _context.Delivery
                         .Include(b => b.Status)
+                        .Include(c => c.User)
                     .ToListAsync();
         }
     }

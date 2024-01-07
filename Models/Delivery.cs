@@ -18,6 +18,9 @@ namespace TruckManagement.Models
         [Display(Name = "Reference Phone Number")]
         public int PhoneNumber { get; set; }
 
+        public int? UserID { get; set; }
+        public User? User { get; set; }
+
         public int? StatusID { get; set; }
 
         [Display(Name = "Current Status")]

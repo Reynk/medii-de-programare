@@ -30,6 +30,12 @@
             @Html.DisplayFor(model => model.Delivery.PhoneNumber)
         </dd>
         <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Delivery.User.UserName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Delivery.User.UserName)
+        </dd>
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Delivery.Status.StatusName)
         </dt>
         <dd class="col-sm-10">

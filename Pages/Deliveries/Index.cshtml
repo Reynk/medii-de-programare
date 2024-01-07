@@ -23,6 +23,9 @@
                 @Html.DisplayNameFor(model => model.Delivery[0].PhoneNumber)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Delivery[0].User.UserName)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Delivery[0].Status.StatusName)
             </th>
             <th></th>
@@ -40,6 +43,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.PhoneNumber)
             </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.User.UserName)
+                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Status.StatusName)
                 </td>

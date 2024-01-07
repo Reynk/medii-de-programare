@@ -12,8 +12,8 @@ using TruckManagement.Data;
 namespace TruckManagement.Migrations
 {
     [DbContext(typeof(TruckManagementDBContext))]
-    [Migration("20240105152216_MergeUserDeliveryStatus")]
-    partial class MergeUserDeliveryStatus
+    [Migration("20240106084730_errors")]
+    partial class errors
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -44,9 +44,14 @@ namespace TruckManagement.Migrations
                     b.Property<int?>("StatusID")
                         .HasColumnType("int");
 
+                    b.Property<int?>("UserID")
+                        .HasColumnType("int");
+
                     b.HasKey("ID");
 
                     b.HasIndex("StatusID");
+
+                    b.HasIndex("UserID");
 
                     b.ToTable("Delivery");
                 });
@@ -98,7 +103,13 @@ namespace TruckManagement.Migrations
                         .WithMany("Deliveries")
                         .HasForeignKey("StatusID");
 
+                    b.HasOne("TruckManagement.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserID");
+
                     b.Navigation("Status");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("TruckManagement.Models.Status", b =>
